@@ -27,11 +27,7 @@ class FestivalAPI {
       const url = `${this.baseURL}?dataset=panorama-des-festivals&facet=thematique&refine.thematique=${thematique}`;
       return this.fetchData(url);
     }
-  
-    async getFestivalsByDomaine(domaine) {
-      const url = `${this.baseURL}?dataset=panorama-des-festivals&facet=domaine&refine.domaine=${domaine}`;
-      return this.fetchData(url);
-    }
+ 
   
     async fetchData(url) {
       try {
